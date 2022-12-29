@@ -1,0 +1,116 @@
+
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('../static/bg1.jpg');
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 70px;
+        filter: invert(100%);
+        padding-left: 7px;
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 45%;
+        margin: 27px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 18px;
+
+    }
+
+    .navbar li a:hover{
+        text-decoration: underline;
+        color: #b0b886;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid #b0b886;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #b0b886;
+    }
+
+    .container {
+        border: 2px solid #b0b886;
+        margin: 86px 80px;
+        padding: 60px;
+        width: 35%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .form-group input:hover {
+        background-color: #b0b886;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
