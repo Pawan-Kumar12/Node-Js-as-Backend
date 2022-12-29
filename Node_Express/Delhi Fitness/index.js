@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const app = express();
-const port = 80;
+const port = 80;  //perks of using 80 is we don't need to write port no after localhost 
 
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
