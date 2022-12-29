@@ -14,8 +14,8 @@ app.set('views', path.join(__dirname, 'views')) // Set the views directory
 
 // ENDPOINTS
 app.get('/', (req, res)=>{
-    const params = {}
-    res.status(200).render('index.pug', params);
+    const params = {'title':'Best India Bi-Cycles & Cycling Events'}
+    res.status(200).render('home.pug', params);
 })
 
 app.post('/', (req, res)=>{
@@ -44,7 +44,7 @@ app.post('/', (req, res)=>{
 
 
     const params = {'message': 'Your form has been submitted successfully'}
-    res.status(200).render('index.pug', params);
+    res.status(200).render('home.pug', params);
 })
 
 

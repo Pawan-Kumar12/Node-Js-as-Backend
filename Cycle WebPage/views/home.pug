@@ -1,0 +1,65 @@
+extends base.pug
+
+block scripts
+      script(src='../static/index.js')
+block style 
+    style
+      include ../static/style.css
+//-       include ../static/phone.css
+
+block content
+       nav#navbar
+        #logo
+            img(src='../static/img/logo.png', alt='indiacycles.com')
+        ul
+            li.item #[a(href='#Product-Services') Products &amp; Services]
+            li.item #[a(href='#home') Home]
+            li.item #[a(href='#Brands') Brands]
+            li.item #[a(href='#Events') Events]
+            li.item #[a(href='#Contact') Contact Us]
+       section#home
+        h1.h-primary Find your perfect match
+        p
+            | Lightweight and superior construction for a perfect fit and effortless pedaling.
+        p Bikes you won&rsquo;t believe exist. 
+        button.btn Order Now
+       section#Product-Services
+        h1.h-primary.center Products &amp; Services
+         #services
+            .product
+                .box
+                    img(src='../static/img/item1.jpg', alt='cycle-1')
+                .box
+                    img(src='../static/img/item2.jpg', alt='cycle-2')
+                .box
+                    img(src='../static/img/item3.jpg', alt='cycle-3')
+                .box.Cycleservice1
+                    img(src='../static/img/service1.jpg', alt='servicePart-1')
+                .box.Cycleservice1
+                    img(src='../static/img/service2.jpg', alt='servicePart-2')
+                .box.Cycleservice1
+                    img(src='../static/img/service3.jpg', alt='servicePart-3')
+       section#Brands
+        h1.h-primary.center Brands
+        #brands
+            .Brands-item
+            img(src='../static/img/brands.jpg', alt='Our Brands')
+       section#Events
+        h1.h-primary.center Connect With Us For Upcoming Events
+        #Events-box
+          form.Events(action='/', method='post')
+                .form-group
+                    label(for='Name') Name: 
+                    input#name(type='text', name='Name', placeholder='Enter your name')
+                .form-group
+                    label(for='Email') Email: 
+                    input#email(type='email', name='Email', placeholder='Enter your email')
+                .form-group
+                    label(for='Contact') Phone Number: 
+                    input#phone(type='phone', name='Contact', placeholder='Enter your phone')
+                .form-group
+                    label(for='Intro') Message: 
+                    textarea#message(name='Intro', cols='30', rows='10', placeholder='Tell Us about yourself')
+                button.btn#submit Connect Me
+
+
